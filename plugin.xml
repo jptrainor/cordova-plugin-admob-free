@@ -30,6 +30,11 @@
     <platform name="android">
         <preference name="ADMOB_APP_ID" default=""/>
 
+	<preference name="PLAY_SERVICES_BASE_VERSION" default="17.4.0"/>
+        <preference name="PLAY_SERVICES_ADS_VERSION" default="19.4.0"/>
+        <framework src="com.google.android.gms:play-services-base:$PLAY_SERVICES_BASE_VERSION" />
+        <framework src="com.google.android.gms:play-services-ads:$PLAY_SERVICES_ADS_VERSION" />
+	
         <config-file parent="/manifest/application" target="AndroidManifest.xml">
             <activity android:name="com.google.android.gms.ads.AdActivity"
                 android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
