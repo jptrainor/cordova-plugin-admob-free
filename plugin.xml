@@ -69,6 +69,8 @@
     </platform>
 
     <platform name="ios">
+        <framework src="Google-Mobile-Ads-SDK" type="podspec" spec="~> 7.65" />
+
         <config-file parent="/*" target="config.xml">
             <feature name="AdMob">
                 <param name="ios-package" value="CDVAdMob" />
