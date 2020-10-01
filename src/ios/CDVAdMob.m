@@ -147,11 +147,8 @@
         [self __createBanner];
     }
 
-    if(autoShowBanner) {
-        bannerShow = autoShowBanner;
-
-        [self __showAd:YES];
-    }
+    bannerShow = autoShowBanner;
+    [self __showAd:autoShowBanner];
 
     pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
     [self.commandDelegate sendPluginResult:pluginResult callbackId:callbackId];
