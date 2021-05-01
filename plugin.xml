@@ -69,7 +69,7 @@
     </platform>
 
     <platform name="ios">
-        <framework src="Google-Mobile-Ads-SDK" type="podspec" spec="~> 7.6.9" />
+        <framework src="Google-Mobile-Ads-SDK" type="podspec" spec="~> 7.69.0" />
 
         <config-file parent="/*" target="config.xml">
             <feature name="AdMob">
